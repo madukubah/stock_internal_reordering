@@ -15,7 +15,7 @@ class PosCashback(models.Model):
         help="This technical field can be used at the statement line creation/import time in order to avoid the reconciliation"
              " process on it later on. The statement line will simply create a counterpart on this account")
     
-    minimal_amount = fields.Float(string="Minumum Amount", required=True)
+    minimal_amount = fields.Float(string="Minimum Amount", required=True)
     cashback_pc = fields.Float(string='Cash Back Percentage', default=10, help='The default discount percentage')
     # active = fields.Boolean(default=True)
     state = fields.Selection([('all', 'All Orders'), ('selected', 'Selected Orders')], string='Status', required=True,  default='all')
