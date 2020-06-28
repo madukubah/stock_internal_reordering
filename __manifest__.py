@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Quality Assurance & Quality Check',
+    'name': 'Sale Mining',
     'version': '1.0',
     'author': 'Technoindo.com',
     'category': 'Sales Management',
     'depends': [
         'sale_contract',
+        'shipping',
+        'sale_qaqc',
     ],
     'data': [
         'views/menu.xml',
@@ -20,5 +22,5 @@
     ],
     "installable": True,
 	"auto_instal": False,
-	"application": True,
+	"application": False,
 }
