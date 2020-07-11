@@ -1,18 +1,22 @@
 # -*- coding: utf-8 -*-
-
 {
-    'name': 'Sale Mining',
+    'name': 'Stock Internal Reordering',
     'version': '1.0',
     'author': 'Technoindo.com',
-    'category': 'Sales Management',
+    'category': 'Stock Internal Reordering',
     'depends': [
-        'sale_contract',
-        'shipping',
-        'sale_qaqc',
+        'stock',
     ],
     'data': [
         'views/menu.xml',
-        'views/qaqc_coa.xml',
+        'views/stock_internal_reorder.xml',
+
+        'data/internal_reordering_data.xml',
+        'data/cron_data.xml',
+        
+        'wizard/stock_internal_reorder_compute.xml',
+
+        'security/ir.model.access.csv',
     ],
     'qweb': [
         # 'static/src/xml/cashback_templates.xml',
